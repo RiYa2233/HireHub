@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | HireHub</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">HireHub</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="jobs.html">Jobs</a>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="#">Logout</a>
+
+</nav>
+
+</header>
+
+
+<section class="dashboard">
+
+    <div class="welcome">
+
+        <h1>Welcome Back, Riya 👋</h1>
+
+        <p>Here's an overview of your placement journey.</p>
+
+    </div>
+
+    <div class="dashboard-search">
+
+    <input type="text" id="searchInput" placeholder="Search jobs, companies, locations...">
+
+</div>
+
+    <div class="dashboard-cards">
+
+        <div class="dashboard-card">
+            <h2>12</h2>
+            <p>Jobs Applied</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h2>8</h2>
+            <p>Saved Jobs</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h2>3</h2>
+            <p>Interviews</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h2>98%</h2>
+            <p>Profile Complete</p>
+        </div>
+
+    </div>
+
+    <div class="recent-applications">
+
+    <h2>Recent Applications</h2>
+
+    <table>
+
+        <tr>
+            <th>Company</th>
+            <th>Role</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>Google</td>
+            <td>Software Engineer</td>
+            <td><span class="status applied">Applied</span></td>
+        </tr>
+
+        <tr>
+            <td>Microsoft</td>
+            <td>SDE Intern</td>
+            <td><span class="status interview">Interview</span></td>
+        </tr>
+
+        <tr>
+            <td>Amazon</td>
+            <td>Cloud Support Engineer</td>
+            <td><span class="status rejected">Rejected</span></td>
+        </tr>
+
+        <tr>
+            <td>Adobe</td>
+            <td>Frontend Developer</td>
+            <td><span class="status applied">Applied</span></td>
+        </tr>
+
+    </table>
+
+</div>
+
+<section class="overview-section">
+
+    <div class="overview-left">
+
+        <h2>Application Overview</h2>
+
+        <div class="chart-container">
+
+            <canvas id="applicationChart"></canvas>
+
+            <div class="chart-center-text">
+                <h3>20</h3>
+                <p>Total Applications</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="overview-right">
+
+        <div class="overview-item applied">
+            <div class="color green"></div>
+            <span>Applied</span>
+            <strong>6</strong>
+            <small>30%</small>
+        </div>
+
+        <div class="overview-item interview">
+            <div class="color yellow"></div>
+            <span>Interview</span>
+            <strong>5</strong>
+            <small>25%</small>
+        </div>
+
+        <div class="overview-item pending">
+            <div class="color blue"></div>
+            <span>Pending</span>
+            <strong>5</strong>
+            <small>25%</small>
+        </div>
+
+        <div class="overview-item approved">
+            <div class="color purple"></div>
+            <span>Approved</span>
+            <strong>4</strong>
+            <small>20%</small>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="progress-section">
+
+    <h2>Placement Progress</h2>
+
+    <div class="progress-item">
+
+        <span>Profile Completion</span>
+
+        <div class="progress-bar">
+            <div class="progress-fill profile"></div>
+        </div>
+
+    </div>
+
+    <div class="progress-item">
+
+        <span>Applications Submitted</span>
+
+        <div class="progress-bar">
+            <div class="progress-fill application"></div>
+        </div>
+
+    </div>
+
+    <div class="progress-item">
+
+        <span>Interview Preparation</span>
+
+        <div class="progress-bar">
+            <div class="progress-fill interview"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="upcoming-interview">
+
+    <h2>Upcoming Interview</h2>
+
+    <div class="interview-card">
+
+        <div>
+            <h3>Microsoft</h3>
+            <p>SDE Intern</p>
+        </div>
+
+        <div>
+            <p>📅 15 July 2026</p>
+            <p>⏰ 10:00 AM</p>
+        </div>
+
+        <button>View Details</button>
+
+    </div>
+
+</div>
+
+<div class="quick-actions">
+
+    <h2>Quick Actions</h2>
+
+    <div class="action-grid">
+
+        <a href="jobs.html" class="action-card">
+
+            <div class="action-icon">💼</div>
+
+            <h3>Apply Jobs</h3>
+
+            <p>Browse latest job opportunities.</p>
+
+        </a>
+
+        <a href="#" class="action-card">
+
+            <div class="action-icon">📄</div>
+
+            <h3>Update Resume</h3>
+
+            <p>Keep your resume up to date.</p>
+
+        </a>
+
+        <a href="#" class="action-card">
+
+            <div class="action-icon">❤️</div>
+
+            <h3>Saved Jobs</h3>
+
+            <p>View your bookmarked jobs.</p>
+
+        </a>
+
+        <a href="#" class="action-card">
+
+            <div class="action-icon">👤</div>
+
+            <h3>Edit Profile</h3>
+
+            <p>Update your personal details.</p>
+
+        </a>
+
+    </div>
+
+</div>
+
+<div class="recommended-jobs">
+
+    <h2>Recommended Jobs</h2>
+
+    <div class="jobs-container">
+
+    <div class="recommended-grid">
+
+        <div class="recommended-card searchable">
+            <h3>Google</h3>
+            <p>Backend Developer</p>
+            <span>📍 Bangalore</span>
+            <button>Apply</button>
+        </div>
+
+        <div class="recommended-card searchable">
+            <h3>Amazon</h3>
+            <p>Frontend Developer</p>
+            <span>📍 Hyderabad</span>
+            <button>Apply</button>
+        </div>
+
+        <div class="recommended-card searchable">
+            <h3>Adobe</h3>
+            <p>UI/UX Designer</p>
+            <span>📍 Noida</span>
+            <button>Apply</button>
+        </div>
+
+    </div>
+
+    </div>
+
+</div>
+
+<div class="activity-section">
+
+    <h2>Recent Activity</h2>
+
+    <div class="activity-item">
+        <div class="activity-dot"></div>
+        <div>
+            <h4>Applied to Google</h4>
+            <p>Backend Developer • 2 hours ago</p>
+        </div>
+    </div>
+
+    <div class="activity-item">
+        <div class="activity-dot"></div>
+        <div>
+            <h4>Resume Updated</h4>
+            <p>Your profile reached 98% completion.</p>
+        </div>
+    </div>
+
+    <div class="activity-item">
+        <div class="activity-dot"></div>
+        <div>
+            <h4>Interview Scheduled</h4>
+            <p>Microsoft • 15 July • 10:00 AM</p>
+        </div>
+    </div>
+
+</div>
+
+<section class="companies-section">
+
+    <h2>Top Companies Hiring</h2>
+
+    <div class="companies-grid">
+
+        <div class="company-card">
+            <img src="images/google.svg" alt="Google">
+            <h3>Google</h3>
+            <p>120+ Open Roles</p>
+        </div>
+
+        <div class="company-card">
+            <img src="images/microsoft.svg" alt="Microsoft">
+            <h3>Microsoft</h3>
+            <p>95+ Open Roles</p>
+        </div>
+
+        <div class="company-card">
+            <img src="images/amazon.svg" alt="Amazon">
+            <h3>Amazon</h3>
+            <p>150+ Open Roles</p>
+        </div>
+
+        <div class="company-card">
+            <img src="images/adobe.svg" alt="Adobe">
+            <h3>Adobe</h3>
+            <p>45+ Open Roles</p>
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+
+<footer class="dashboard-footer">
+
+    <p>© 2026 HireHub. All Rights Reserved.</p>
+
+    <p>Made with ❤️ for Students</p>
+
+</footer>
+
+<script>
+
+const ctx = document.getElementById('applicationChart');
+
+new Chart(ctx, {
+
+    type: 'doughnut',
+
+    data: {
+
+        labels: [
+            'Applied',
+            'Interview',
+            'Pending',
+            'Approved'
+        ],
+
+        datasets: [{
+
+            data: [6, 5, 5, 4],
+
+            backgroundColor: [
+                '#22c55e',
+                '#f59e0b',
+                '#3b82f6',
+                '#8b5cf6'
+            ],
+
+            borderWidth: 0,
+
+            hoverOffset: 12
+
+        }]
+
+    },
+
+    options: {
+
+        responsive: true,
+
+        cutout: '68%',
+
+        animation: {
+            animateRotate: true,
+
+            duration: 1800
+},
+
+        plugins: {
+
+            legend: {
+                display: false
+            },
+
+            tooltip: {
+                enabled: false
+            }
+
+        }
+
+    }
+
+});
+
+// Search Function
+
+const searchInput = document.getElementById("searchInput");
+const jobCards = document.querySelectorAll(".recommended-card");
+
+searchInput.addEventListener("keyup", function () {
+
+    const value = searchInput.value.toLowerCase();
+
+    jobCards.forEach(card => {
+
+        if (card.innerText.toLowerCase().includes(value)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>
+
