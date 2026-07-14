@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Company Dashboard | HireHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">HireHub</div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="company.html">Company</a>
+        <a href="jobs.html">Jobs</a>
+
+    </nav>
+
+</header>
+
+<section class="company-page">
+
+    <h1>Company Dashboard</h1>
+
+    <p>Post jobs and manage applicants.</p>
+
+    <div class="company-form">
+
+        <h2>Post New Job</h2>
+
+        <form>
+
+            <label>Job Title</label>
+            <input type="text" placeholder="Software Engineer">
+
+            <label>Location</label>
+            <input type="text" placeholder="Bangalore">
+
+            <label>Salary</label>
+            <input type="text" placeholder="12 - 18 LPA">
+
+            <label>Experience</label>
+            <input type="text" placeholder="0 - 2 Years">
+
+            <label>Required Skills</label>
+            <input type="text" placeholder="Java, SQL, DSA">
+
+            <button type="submit">Post Job</button>
+
+        </form>
+
+    </div>
+
+    <h2 class="table-title">Posted Jobs</h2>
+
+<table class="admin-table">
+
+    <tr>
+        <th>Job Title</th>
+        <th>Location</th>
+        <th>Status</th>
+    </tr>
+
+    <tr>
+        <td>Software Engineer</td>
+        <td>Bangalore</td>
+        <td><span class="active-status">Active</span></td>
+    </tr>
+
+    <tr>
+        <td>SDE Intern</td>
+        <td>Hyderabad</td>
+        <td><span class="active-status">Active</span></td>
+    </tr>
+
+    <tr>
+        <td>Frontend Developer</td>
+        <td>Noida</td>
+        <td><span class="pending-status">Closed</span></td>
+    </tr>
+
+</table>
+
+<h2 class="table-title">Recent Applicants</h2>
+
+<table class="admin-table">
+
+    <tr>
+        <th>Student</th>
+        <th>Applied For</th>
+        <th>Status</th>
+    </tr>
+
+    <tr>
+        <td>Riya Sen Gupta</td>
+        <td>Software Engineer</td>
+        <td><span class="active-status">Shortlisted</span></td>
+    </tr>
+
+    <tr>
+        <td>Rahul Sharma</td>
+        <td>Java Developer</td>
+        <td><span class="pending-status">Pending</span></td>
+    </tr>
+
+    <tr>
+        <td>Akanksha Varshney</td>
+        <td>Frontend Developer</td>
+        <td><span class="active-status">Selected</span></td>
+    </tr>
+
+</table>
+
+</section>
+
+<footer>
+
+    <p>© 2026 HireHub | Designed by Riya Sen Gupta</p>
+
+</footer>
+
+</body>
+
+</html>

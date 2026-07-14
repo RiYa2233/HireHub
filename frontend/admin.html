@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | HireHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">HireHub</div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="admin.html">Admin</a>
+
+    </nav>
+
+</header>
+
+<section class="admin-page">
+
+    <h1>Admin Dashboard</h1>
+
+    <p>Manage students, companies and job postings.</p>
+
+    <div class="admin-cards">
+
+        <div class="admin-card">
+            <h2>250</h2>
+            <p>Students</p>
+        </div>
+
+        <div class="admin-card">
+            <h2>45</h2>
+            <p>Companies</p>
+        </div>
+
+        <div class="admin-card">
+            <h2>120</h2>
+            <p>Jobs</p>
+        </div>
+
+        <div class="admin-card">
+            <h2>580</h2>
+            <p>Applications</p>
+        </div>
+
+    </div>
+
+    <div class="admin-actions">
+
+        <button>Manage Students</button>
+
+        <button>Manage Companies</button>
+
+        <button>Manage Jobs</button>
+
+        <button>View Reports</button>
+
+    </div>
+
+    <div class="admin-search">
+
+    <input
+        type="text"
+        id="studentSearch"
+        placeholder="Search Student...">
+
+</div>
+
+    <h2 class="table-title">Manage Students</h2>
+
+<table class="admin-table" id="studentTable">
+
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Course</th>
+        <th>Status</th>
+    </tr>
+
+    <tr>
+        <td>Riya Sen Gupta</td>
+        <td>kakolisengupta595@gmail.com</td>
+        <td>B.Tech CSE</td>
+        <td><span class="active-status">Active</span></td>
+    </tr>
+
+    <tr>
+        <td>Akanksha Varshney</td>
+        <td>akanksha@gmail.com</td>
+        <td>B.Tech CSE</td>
+        <td><span class="active-status">Active</span></td>
+    </tr>
+
+    <tr>
+        <td>Rahul Sharma</td>
+        <td>rahul@gmail.com</td>
+        <td>BCA</td>
+        <td><span class="pending-status">Pending</span></td>
+    </tr>
+
+</table>
+
+</section>
+
+<footer>
+
+    <p>© 2026 HireHub | Designed by Riya Sen Gupta</p>
+
+</footer>
+
+<script>
+
+const search = document.getElementById("studentSearch");
+const rows = document.querySelectorAll("#studentTable tr");
+
+search.addEventListener("keyup", function(){
+
+    const value = search.value.toLowerCase();
+
+    rows.forEach(function(row,index){
+
+        if(index===0) return;
+
+        if(row.innerText.toLowerCase().includes(value)){
+            row.style.display="";
+        }else{
+            row.style.display="none";
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>

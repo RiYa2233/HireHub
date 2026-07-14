@@ -42,8 +42,9 @@
     <div class="search-box">
 
         <input
-        type="text"
-        placeholder="Search jobs, companies or skills...">
+            type="text"
+            id="searchInput"
+            placeholder="Search jobs, companies or skills...">
 
         <button>Search</button>
 
@@ -52,110 +53,189 @@
     <div class="filters">
 
         <button>💻 IT Jobs</button>
-
         <button>🎓 Internship</button>
-
         <button>🏠 Remote</button>
-
         <button>📍 Delhi NCR</button>
-
         <button>💰 10+ LPA</button>
 
     </div>
 
     <div class="job-list">
 
-        <div class="job-card">
+        <!-- Google -->
+
+        <div class="job-card searchable">
+
+            <div class="save-job">🤍</div>
+
+            <img src="images/google.png" alt="Google Logo" class="job-logo">
 
             <h2>Google</h2>
 
             <h3>Software Engineer</h3>
 
+            <p class="experience">🟢 Freshers Eligible</p>
+
             <p>📍 Bangalore</p>
 
             <p>💰 18 - 25 LPA</p>
 
-            <p>⭐ Full Time</p>
+            <p>👨‍💻 Experience : Freshers</p>
+
+            <p><strong>Skills:</strong> Java, DSA, Spring Boot</p>
+
+            <p class="job-type full-time">Full Time</p>
+
+            <p>📅 Posted: Today</p>
 
             <button>Apply Now</button>
 
         </div>
 
-        <div class="job-card">
+        <!-- Microsoft -->
+
+        <div class="job-card searchable">
+
+            <div class="save-job">🤍</div>
+
+            <img src="images/microsoft.png" alt="Microsoft Logo" class="job-logo">
 
             <h2>Microsoft</h2>
 
             <h3>SDE Intern</h3>
 
+            <p class="experience">🟢 Freshers Eligible</p>
+
             <p>📍 Hyderabad</p>
 
             <p>💰 ₹50,000 / Month</p>
 
-            <p>⭐ Internship</p>
+            <p>👨‍💻 Experience : Freshers</p>
+
+            <p><strong>Skills:</strong> C++, OOPs, SQL</p>
+
+            <p class="job-type internship">Internship</p>
+
+            <p>📅 Posted: 1 Day Ago</p>
 
             <button>Apply Now</button>
 
         </div>
 
-        <div class="job-card">
+        <!-- Amazon -->
+
+        <div class="job-card searchable">
+
+            <div class="save-job">🤍</div>
+
+            <img src="images/amazon.png" alt="Amazon Logo" class="job-logo">
 
             <h2>Amazon</h2>
 
             <h3>Cloud Support Engineer</h3>
 
+            <p class="experience">🟡 1+ Year Experience</p>
+
             <p>📍 Pune</p>
 
             <p>💰 12 - 18 LPA</p>
 
-            <p>⭐ Full Time</p>
+            <p>👨‍💻 Experience : 1+ Years</p>
+
+            <p><strong>Skills:</strong> AWS, Linux, Networking</p>
+
+            <p class="job-type full-time">Full Time</p>
+
+            <p>📅 Posted: 2 Days Ago</p>
 
             <button>Apply Now</button>
 
         </div>
 
-        <div class="job-card">
+        <!-- Adobe -->
+
+        <div class="job-card searchable">
+
+            <div class="save-job">🤍</div>
+
+            <img src="images/adobe.png" alt="Adobe Logo" class="job-logo">
 
             <h2>Adobe</h2>
 
             <h3>Frontend Developer</h3>
 
+            <p class="experience">🟢 Freshers Eligible</p>
+
             <p>📍 Noida</p>
 
             <p>💰 15 - 22 LPA</p>
 
-            <p>⭐ Full Time</p>
+            <p>👨‍💻 Experience : Freshers</p>
+
+            <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+
+            <p class="job-type full-time">Full Time</p>
+
+            <p>📅 Posted: Today</p>
 
             <button>Apply Now</button>
 
         </div>
+                <!-- Infosys -->
 
-        <div class="job-card">
+        <div class="job-card searchable">
+
+            <div class="save-job">🤍</div>
+
+            <img src="images/infosys.png" alt="Infosys Logo" class="job-logo">
 
             <h2>Infosys</h2>
 
             <h3>Java Developer</h3>
 
+            <p class="experience">🟢 Freshers Eligible</p>
+
             <p>📍 Mysore</p>
 
             <p>💰 6 - 8 LPA</p>
 
-            <p>⭐ Full Time</p>
+            <p>👨‍💻 Experience : Freshers</p>
+
+            <p><strong>Skills:</strong> Java, SQL, Git</p>
+
+            <p class="job-type full-time">Full Time</p>
+
+            <p>📅 Posted: 3 Days Ago</p>
 
             <button>Apply Now</button>
 
         </div>
 
-        <div class="job-card">
+        <!-- TCS -->
+
+        <div class="job-card searchable">
+
+            <div class="save-job">🤍</div>
+
+            <img src="images/tcs.png" alt="TCS Logo" class="job-logo">
 
             <h2>TCS</h2>
 
             <h3>System Engineer</h3>
 
+            <p class="experience">🟢 Freshers Eligible</p>
+
             <p>📍 Kolkata</p>
 
             <p>💰 4 - 7 LPA</p>
 
-            <p>⭐ Full Time</p>
+            <p>👨‍💻 Experience : 0-2 Years</p>
+
+            <p><strong>Skills:</strong> Java, Aptitude, Communication</p>
+
+            <p class="job-type full-time">Full Time</p>
+
+            <p>📅 Posted: Yesterday</p>
 
             <button>Apply Now</button>
 
@@ -172,25 +252,25 @@
     <div class="company-grid">
 
         <div class="company-card">
-            <img src="images/google.svg" alt="">
+            <img src="images/google.png" alt="Google">
             <h3>Google</h3>
             <p>120+ Openings</p>
         </div>
 
         <div class="company-card">
-            <img src="images/microsoft.svg" alt="">
+            <img src="images/microsoft.png" alt="Microsoft">
             <h3>Microsoft</h3>
             <p>95+ Openings</p>
         </div>
 
         <div class="company-card">
-            <img src="images/amazon.svg" alt="">
+            <img src="images/amazon.png" alt="Amazon">
             <h3>Amazon</h3>
             <p>140+ Openings</p>
         </div>
 
         <div class="company-card">
-            <img src="images/tcs.svg" alt="">
+            <img src="images/tcs.png" alt="TCS">
             <h3>TCS</h3>
             <p>300+ Openings</p>
         </div>
@@ -205,7 +285,28 @@
 
 </footer>
 
+<script>
+
+const searchInput = document.getElementById("searchInput");
+const jobCards = document.querySelectorAll(".searchable");
+
+searchInput.addEventListener("keyup", function(){
+
+    const value = searchInput.value.toLowerCase();
+
+    jobCards.forEach(function(card){
+
+        if(card.innerText.toLowerCase().includes(value)){
+            card.style.display = "block";
+        }else{
+            card.style.display = "none";
+        }
+
+    });
+
+});
+
+</script>
+
 </body>
-
 </html>
-
